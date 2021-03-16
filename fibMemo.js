@@ -7,7 +7,8 @@ const fib = (n) => {
 
 // memoization
 //      js object, keys will be arg to fn, value will be the return value
-
+// Time Complexity -> O(2n) -> O(n)
+// Space Complexity -> O(n)
 const fibMemo = (n, memo = {}) => {
   if (n in memo) return memo[n]; // memo checking logic
   if (n <= 2) return 1;
