@@ -23,7 +23,7 @@ const howSumMemo = (targetSum, numbers, memo = {}) => {
   if (targetSum === 0) return [];
   if (targetSum < 0) return null;
 
-  for (let num in numbers) {
+  for (let num of numbers) {
     const remainder = targetSum - num;
     const remainderResult = howSumMemo(remainder, numbers, memo);
     if (remainderResult !== null) {
