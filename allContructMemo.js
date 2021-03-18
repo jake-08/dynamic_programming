@@ -7,7 +7,7 @@ const allConstruct = (target, wordBank) => {
 
   const result = [];
 
-  for (let word of wordBank) {
+  for (let  word of wordBank) {
     if (target.indexOf(word) === 0) {
       const suffix = target.slice(word.length);
       const suffixWays = allConstruct(suffix, wordBank);
