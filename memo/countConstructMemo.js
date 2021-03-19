@@ -34,5 +34,6 @@ const countConstructMemo = (target, wordBank, memo = {}) => {
   return totalCount;
 };
 
-console.log(countConstruct("purple", ["pu", "pl", "purp", "le", "rp"]));
-console.log(countConstructMemo("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", ["e", "ee", "eee", "eeee", "eeeee", "eeeeee"]));
+console.log(countConstructMemo('purple', ['pu', 'pur', 'rl', 'e', 'r', 'ple']));
+console.log(countConstructMemo('purple', ['purp', 'p', 'ur', 'le', 'ple']));
+console.log(countConstructMemo('abcdef', ['ab', 'abc', 'c', 'cd', 'def', 'abcd', 'ef']));
